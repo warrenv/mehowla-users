@@ -1,0 +1,43 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "users microservice",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore -- .",
+    "test": "node -r esm ./tests/index.js",
+    "test:unit": "node -r esm ./tests/unit/index.js",
+    "test:functional": "node -r esm  ./tests/functional/index.js",
+    "test:integration": "node -r esm  ./tests/integration/index.js",
+    "coverage:unit": "nyc npm run test:unit",
+    "coverage:integration": "nyc npm run test:integration",
+    "start": "node -r esm index.js",
+    "start:dev": "nodemon -r esm --ignore tests --ignore '*.test.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "2.2.3",
+    "esm": "3.0.84",
+    "koa": "2.6.2",
+    "koa-bodyparser": "4.2.1",
+    "koa-helmet": "4.0.0",
+    "koa-router": "7.4.0",
+    "mongoose": "5.4.3",
+    "ramda": "0.26.1"
+  },
+  "devDependencies": {
+    "eslint": "5.12.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "node-fetch": "2.3.0",
+    "nodemon": "1.18.9",
+    "nyc": "13.1.0",
+    "riteway": "4.0.1",
+    "sinon": "7.2.2"
+  }
+}

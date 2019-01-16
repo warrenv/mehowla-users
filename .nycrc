@@ -1,0 +1,16 @@
+{
+  "extension": [".js"],
+  "include": ["src/**/*.js"],
+  "exclude": [
+    "src/**/*.test.js",
+    "src/**/index.js",
+    "tests/**/*.*"
+  ],
+  "reporter": [
+    "html",
+    "text",
+    "text-summary"
+  ],
+  "all": true,
+  "cache": false
+}

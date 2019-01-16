@@ -1,0 +1,13 @@
+Dockerfile*
+docker-compose*
+dist/
+coverage/
+.github/
+.gitignore
+.idea
+makefile
+node_modules/
+.nyc_output/
+openapi.*
+.travis.yml
+.nvmrc
